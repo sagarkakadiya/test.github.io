@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1570447245496,
+  "timestamp": 1570510486873,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -16,7 +16,9 @@
         "/runtime.26209474bfa8dc87a77c.js",
         "/styles.3ff695c00d717f2d2a11.css"
       ],
-      "patterns": []
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/.*"
+      ]
     },
     {
       "name": "assets",
@@ -35,7 +37,19 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "jokes-api",
+      "patterns": [
+        "https:\\/\\/api\\.chucknorris\\.io\\/jokes\\/random"
+      ],
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge": 3600000,
+      "timeoutMs": 5000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
@@ -47,7 +61,7 @@
     "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/es2015-polyfills.bda95d5896422d031328.js": "1612fe8f7e8e0c856f0885ff179e93363c67834f",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "347467b1c4f9d976a4dd86e6a444764130f3ffe1",
+    "/index.html": "9d1fab54ba0aa7b045e1065695c09f2bc5bdfff7",
     "/main.3c59246f65ae628e4199.js": "d815ee6c35eb14d2164098438f60a6ea8113c5f7",
     "/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
